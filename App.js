@@ -1,20 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
+import React from 'react';
+import { useFonts } from 'expo-font';
 
-export default function App() {
+import LightAnimation from './src/LightAnimation';
+
+const App = () => {
+  const [fontsLoaded] = useFonts({
+    Albiona: require('./assets/font/Albiona.otf'),
+  });
+
+  if (!fontsLoaded) return null;
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+    <View style={{ flex: 1 }}>
+      <LightAnimation />
     </View>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
