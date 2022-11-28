@@ -9,7 +9,6 @@ import Animated, {
 } from 'react-native-reanimated';
 import Svg, { Defs, RadialGradient, Stop, Circle } from 'react-native-svg';
 import TextContent from './Text';
-import Icon from './Icon';
 import Bulb from './Bulb';
 
 const { width, height } = Dimensions.get('screen');
@@ -110,8 +109,6 @@ export default function LightAnimation(...props) {
           <Circle cx='475' cy='235' r='307' fill='url(#grad2)' />
         </Svg>
       </Animated.View>
-
-      <Icon on={bulbOn} />
     </View>
   );
 }
