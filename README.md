@@ -11,6 +11,5 @@ https://user-images.githubusercontent.com/74572355/204166507-6e1ffef8-e1f4-4169-
 
   <img alt="Screen 1" src="https://i.imgur.com/Dapmri0.png" height="30%" width="30%" />
   <img alt="Screen 2" src="https://i.imgur.com/yqEGsA7.png" height="30%" width="30%" /> 
-  
 </p>
 
